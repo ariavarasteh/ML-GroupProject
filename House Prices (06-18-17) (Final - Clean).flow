@@ -1,0 +1,137 @@
+{
+  "version": "1.0.0",
+  "cells": [
+    {
+      "type": "cs",
+      "input": "assist"
+    },
+    {
+      "type": "cs",
+      "input": "importFiles"
+    },
+    {
+      "type": "cs",
+      "input": "importFiles [ \"/Users/varasteh/Desktop/TrainSunLN.csv\" ]"
+    },
+    {
+      "type": "cs",
+      "input": "setupParse source_frames: [ \"nfs://Users/varasteh/Desktop/TrainSunLN.csv\" ]"
+    },
+    {
+      "type": "cs",
+      "input": "parseFiles\n  source_frames: [\"nfs://Users/varasteh/Desktop/TrainSunLN.csv\"]\n  destination_frame: \"TrainSunLN.hex\"\n  parse_type: \"CSV\"\n  separator: 44\n  number_columns: 82\n  single_quotes: false\n  column_names: [\"Id\",\"MSSubClass\",\"MSZoning\",\"LotFrontage\",\"LotArea\",\"Street\",\"Alley\",\"LotShape\",\"LandContour\",\"Utilities\",\"LotConfig\",\"LandSlope\",\"Neighborhood\",\"Condition1\",\"Condition2\",\"BldgType\",\"HouseStyle\",\"OverallQual\",\"OverallCond\",\"YearBuilt\",\"YearRemodAdd\",\"RoofStyle\",\"RoofMatl\",\"Exterior1st\",\"Exterior2nd\",\"MasVnrType\",\"MasVnrArea\",\"ExterQual\",\"ExterCond\",\"Foundation\",\"BsmtQual\",\"BsmtCond\",\"BsmtExposure\",\"BsmtFinType1\",\"BsmtFinSF1\",\"BsmtFinType2\",\"BsmtFinSF2\",\"BsmtUnfSF\",\"TotalBsmtSF\",\"Heating\",\"HeatingQC\",\"CentralAir\",\"Electrical\",\"1stFlrSF\",\"2ndFlrSF\",\"LowQualFinSF\",\"GrLivArea\",\"BsmtFullBath\",\"BsmtHalfBath\",\"FullBath\",\"HalfBath\",\"BedroomAbvGr\",\"KitchenAbvGr\",\"KitchenQual\",\"TotRmsAbvGrd\",\"Functional\",\"Fireplaces\",\"FireplaceQu\",\"GarageType\",\"GarageYrBlt\",\"GarageFinish\",\"GarageCars\",\"GarageArea\",\"GarageQual\",\"GarageCond\",\"PavedDrive\",\"WoodDeckSF\",\"OpenPorchSF\",\"EnclosedPorch\",\"3SsnPorch\",\"ScreenPorch\",\"PoolArea\",\"PoolQC\",\"Fence\",\"MiscFeature\",\"MiscVal\",\"MoSold\",\"YrSold\",\"SaleType\",\"SaleCondition\",\"SalePrice\",\"SalePriceLN\"]\n  column_types: [\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Enum\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\"]\n  delete_on_done: true\n  check_header: 1\n  chunk_size: 14984"
+    },
+    {
+      "type": "cs",
+      "input": "assist"
+    },
+    {
+      "type": "cs",
+      "input": "importFiles"
+    },
+    {
+      "type": "cs",
+      "input": "importFiles [ \"/Users/varasteh/Desktop/TestSunLN.csv\" ]"
+    },
+    {
+      "type": "cs",
+      "input": "setupParse source_frames: [ \"nfs://Users/varasteh/Desktop/TestSunLN.csv\" ]"
+    },
+    {
+      "type": "cs",
+      "input": "parseFiles\n  source_frames: [\"nfs://Users/varasteh/Desktop/TestSunLN.csv\"]\n  destination_frame: \"TestSunLN.hex\"\n  parse_type: \"CSV\"\n  separator: 44\n  number_columns: 82\n  single_quotes: false\n  column_names: [\"Id\",\"MSSubClass\",\"MSZoning\",\"LotFrontage\",\"LotArea\",\"Street\",\"Alley\",\"LotShape\",\"LandContour\",\"Utilities\",\"LotConfig\",\"LandSlope\",\"Neighborhood\",\"Condition1\",\"Condition2\",\"BldgType\",\"HouseStyle\",\"OverallQual\",\"OverallCond\",\"YearBuilt\",\"YearRemodAdd\",\"RoofStyle\",\"RoofMatl\",\"Exterior1st\",\"Exterior2nd\",\"MasVnrType\",\"MasVnrArea\",\"ExterQual\",\"ExterCond\",\"Foundation\",\"BsmtQual\",\"BsmtCond\",\"BsmtExposure\",\"BsmtFinType1\",\"BsmtFinSF1\",\"BsmtFinType2\",\"BsmtFinSF2\",\"BsmtUnfSF\",\"TotalBsmtSF\",\"Heating\",\"HeatingQC\",\"CentralAir\",\"Electrical\",\"1stFlrSF\",\"2ndFlrSF\",\"LowQualFinSF\",\"GrLivArea\",\"BsmtFullBath\",\"BsmtHalfBath\",\"FullBath\",\"HalfBath\",\"BedroomAbvGr\",\"KitchenAbvGr\",\"KitchenQual\",\"TotRmsAbvGrd\",\"Functional\",\"Fireplaces\",\"FireplaceQu\",\"GarageType\",\"GarageYrBlt\",\"GarageFinish\",\"GarageCars\",\"GarageArea\",\"GarageQual\",\"GarageCond\",\"PavedDrive\",\"WoodDeckSF\",\"OpenPorchSF\",\"EnclosedPorch\",\"3SsnPorch\",\"ScreenPorch\",\"PoolArea\",\"PoolQC\",\"Fence\",\"MiscFeature\",\"MiscVal\",\"MoSold\",\"YrSold\",\"SaleType\",\"SaleCondition\",\"SalePrice\",\"SalePriceLN\"]\n  column_types: [\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Numeric\",\"Enum\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Enum\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\",\"Numeric\",\"Enum\",\"Enum\",\"Numeric\",\"Numeric\"]\n  delete_on_done: true\n  check_header: 1\n  chunk_size: 15014"
+    },
+    {
+      "type": "cs",
+      "input": "assist"
+    },
+    {
+      "type": "cs",
+      "input": "buildModel"
+    },
+    {
+      "type": "cs",
+      "input": "buildModel 'glm', {\"model_id\":\"glm-358e3e7a-21e0-49f5-9867-d9395fafff44\",\"training_frame\":\"TrainSunLN.hex\",\"validation_frame\":\"TestSunLN.hex\",\"nfolds\":0,\"seed\":-1,\"response_column\":\"SalePriceLN\",\"ignored_columns\":[\"Id\",\"SalePrice\"],\"ignore_const_cols\":true,\"family\":\"gaussian\",\"solver\":\"AUTO\",\"alpha\":[],\"lambda\":[],\"lambda_search\":false,\"standardize\":true,\"non_negative\":false,\"score_each_iteration\":false,\"compute_p_values\":false,\"remove_collinear_columns\":false,\"max_iterations\":-1,\"link\":\"family_default\",\"max_runtime_secs\":0,\"missing_values_handling\":\"MeanImputation\",\"intercept\":true,\"objective_epsilon\":-1,\"beta_epsilon\":0.0001,\"gradient_epsilon\":-1,\"prior\":-1,\"max_active_predictors\":-1}"
+    },
+    {
+      "type": "cs",
+      "input": "getModel \"glm-358e3e7a-21e0-49f5-9867-d9395fafff44\""
+    },
+    {
+      "type": "cs",
+      "input": "assist"
+    },
+    {
+      "type": "cs",
+      "input": "buildModel"
+    },
+    {
+      "type": "cs",
+      "input": "buildModel 'gbm', {\"model_id\":\"gbm-3ec84610-2df9-4e0b-a6ff-e9baf195b163\",\"training_frame\":\"TrainSunLN.hex\",\"validation_frame\":\"TestSunLN.hex\",\"nfolds\":0,\"response_column\":\"SalePriceLN\",\"ignored_columns\":[\"Id\",\"SalePrice\"],\"ignore_const_cols\":true,\"ntrees\":50,\"max_depth\":\"10\",\"min_rows\":10,\"nbins\":20,\"seed\":-1,\"learn_rate\":0.1,\"sample_rate\":1,\"col_sample_rate\":1,\"score_each_iteration\":false,\"score_tree_interval\":0,\"nbins_top_level\":1024,\"nbins_cats\":1024,\"r2_stopping\":1.7976931348623157e+308,\"stopping_rounds\":0,\"stopping_metric\":\"AUTO\",\"stopping_tolerance\":0.001,\"max_runtime_secs\":0,\"learn_rate_annealing\":1,\"distribution\":\"AUTO\",\"huber_alpha\":0.9,\"checkpoint\":\"\",\"col_sample_rate_per_tree\":1,\"min_split_improvement\":0.00001,\"histogram_type\":\"AUTO\",\"categorical_encoding\":\"AUTO\",\"build_tree_one_node\":false,\"sample_rate_per_class\":[],\"col_sample_rate_change_per_level\":1,\"max_abs_leafnode_pred\":1.7976931348623157e+308,\"pred_noise_bandwidth\":0}"
+    },
+    {
+      "type": "cs",
+      "input": "getModel \"gbm-3ec84610-2df9-4e0b-a6ff-e9baf195b163\""
+    },
+    {
+      "type": "cs",
+      "input": "assist"
+    },
+    {
+      "type": "cs",
+      "input": "splitFrame"
+    },
+    {
+      "type": "cs",
+      "input": "splitFrame \"TrainSunLN.hex\", [0.8], [\"TrainSunLN.hex_0.80\",\"TrainSunLN.hex_0.20\"], 347303"
+    },
+    {
+      "type": "cs",
+      "input": "assist"
+    },
+    {
+      "type": "cs",
+      "input": "buildModel"
+    },
+    {
+      "type": "cs",
+      "input": "buildModel 'glm', {\"model_id\":\"glm-9e2a522b-db5b-4943-9698-52003c91c18f\",\"training_frame\":\"TrainSunLN.hex_0.80\",\"validation_frame\":\"TrainSunLN.hex_0.20\",\"nfolds\":0,\"seed\":-1,\"response_column\":\"SalePriceLN\",\"ignored_columns\":[\"Id\",\"SalePrice\"],\"ignore_const_cols\":true,\"family\":\"gaussian\",\"solver\":\"AUTO\",\"alpha\":[],\"lambda\":[],\"lambda_search\":false,\"standardize\":true,\"non_negative\":false,\"score_each_iteration\":false,\"compute_p_values\":false,\"remove_collinear_columns\":false,\"max_iterations\":-1,\"link\":\"family_default\",\"max_runtime_secs\":0,\"missing_values_handling\":\"MeanImputation\",\"intercept\":true,\"objective_epsilon\":-1,\"beta_epsilon\":0.0001,\"gradient_epsilon\":-1,\"prior\":-1,\"max_active_predictors\":-1}"
+    },
+    {
+      "type": "cs",
+      "input": "getModel \"glm-9e2a522b-db5b-4943-9698-52003c91c18f\""
+    },
+    {
+      "type": "cs",
+      "input": "assist"
+    },
+    {
+      "type": "cs",
+      "input": "buildModel"
+    },
+    {
+      "type": "cs",
+      "input": "buildModel 'gbm', {\"model_id\":\"gbm-6af505b2-47a5-477b-8816-2ce5db5f4aff\",\"training_frame\":\"TrainSunLN.hex_0.80\",\"validation_frame\":\"TrainSunLN.hex_0.20\",\"nfolds\":0,\"response_column\":\"SalePriceLN\",\"ignored_columns\":[\"Id\",\"SalePrice\"],\"ignore_const_cols\":true,\"ntrees\":50,\"max_depth\":\"10\",\"min_rows\":10,\"nbins\":20,\"seed\":-1,\"learn_rate\":0.1,\"sample_rate\":1,\"col_sample_rate\":1,\"score_each_iteration\":false,\"score_tree_interval\":0,\"nbins_top_level\":1024,\"nbins_cats\":1024,\"r2_stopping\":1.7976931348623157e+308,\"stopping_rounds\":0,\"stopping_metric\":\"AUTO\",\"stopping_tolerance\":0.001,\"max_runtime_secs\":0,\"learn_rate_annealing\":1,\"distribution\":\"AUTO\",\"huber_alpha\":0.9,\"checkpoint\":\"\",\"col_sample_rate_per_tree\":1,\"min_split_improvement\":0.00001,\"histogram_type\":\"AUTO\",\"categorical_encoding\":\"AUTO\",\"build_tree_one_node\":false,\"sample_rate_per_class\":[],\"col_sample_rate_change_per_level\":1,\"max_abs_leafnode_pred\":1.7976931348623157e+308,\"pred_noise_bandwidth\":0}"
+    },
+    {
+      "type": "cs",
+      "input": "getModel \"gbm-6af505b2-47a5-477b-8816-2ce5db5f4aff\""
+    },
+    {
+      "type": "cs",
+      "input": "predict model: \"gbm-6af505b2-47a5-477b-8816-2ce5db5f4aff\""
+    },
+    {
+      "type": "cs",
+      "input": "predict model: \"gbm-6af505b2-47a5-477b-8816-2ce5db5f4aff\", frame: \"TestSunLN.hex\", predictions_frame: \"prediction-LN-GB-SF\""
+    },
+    {
+      "type": "cs",
+      "input": "getFrameSummary \"prediction-LN-GB-SF\""
+    },
+    {
+      "type": "cs",
+      "input": "getColumnSummary \"prediction-LN-GB-SF\", \"predict\""
+    }
+  ]
+}
